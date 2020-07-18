@@ -3,7 +3,7 @@ This program was created to help my coworkers count inventory every week.
 
 Load the index.html page and input values into the fields provided.
 
-The program should perform authentication to make sure the values entered are integers between 0 and 999,999.
+The program should perform tests to make sure the values entered are integers between 0 and 999,999.
 
 The program should then calculate the total number of cases on hand by performing the following simple calculation:
 
