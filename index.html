@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yerba Mafia Inventory Count App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img class="logo" src="https://media-exp1.licdn.com/dms/image/C560BAQERG8pfH6g1FA/company-logo_200_200/0?e=1603324800&v=beta&t=q44rZhzPTxGfKa2Kppd-0yWLKI9StM2b9zD1lPDJHMk" alt="">
+
+<h2>The Yerba Mate Co</h2>
+<h3>Inventory Calculator App</h3>
+<br>
+<p>Bolts - 20 cases per Row</p>
+<p>Sparks - 26 cases per Row</p>
+<p>Glass - 16 cases per Row</p>
+<br>
+
+<div id="container">
+  <form id="form">
+    <fieldset>
+      <legend>Bolts:</legend>
+        <div class="boltBox">
+          <label class="boltFlavor" for="enlightenMint"><strong>Enlighten Mint:</strong></label>
+            <br><br>
+          <label for="enlightenMintRows">Rows:</label>
+            <br>
+          <input type="number" id="enlightenMintRows" name="enlightenMintRows" pattern="[0-999999]*" placeholder="total number of enlighten mint rows">
+            <br><br>
+          <label for="enlightenMintCases">Cases:</label>
+            <br>
+          <input type="number" id="enlightenMintCases" name="enlightenMintCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="enlightenMintTotalBox"></div>
+        </div>
+        <div class="boltBox">
+          <label class="boltFlavor" for="revelBerry"><strong>Revel Berry:</strong></label>
+            <br><br>
+          <label for="revelBerryRows">Rows:</label>
+            <br>
+          <input type="number" id="revelBerryRows" name="revelBerryRows" pattern="[0-999999]*" placeholder="total number of revel berry rows">
+            <br><br>
+          <label for="revelBerryCases">Cases:</label>
+            <br>
+          <input type="number" id="revelBerryCases" name="revelBerryCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="revelBerryTotalBox"></div>
+        </div>
+        <div class="boltBox">
+          <label class="boltFlavor" for="bluephoria"><strong>Bluephoria:</strong></label>
+            <br><br>
+          <label for="bluephoriaRows">Rows:</label>
+            <br>
+          <input type="number" id="bluephoriaRows" name="blurphoriaRows" pattern="[0-999999]*" placeholder="total number of bluephoria rows">
+            <br><br>
+          <label for="bluephoriaCases">Cases:</label>
+            <br>
+          <input type="number" id="bluephoriaCases" name="bluephoriaCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="bluephoriaTotalBox"></div>
+        </div>
+        <div class="boltBox">
+          <label class="boltFlavor" for="orangeExuberance"><strong>Orange Exuberance:</strong></label>
+            <br><br>
+          <label for="orangeRows">Rows:</label>
+            <br>
+          <input type="number" id="orangeRows" name="orangeRows" pattern="[0-999999]*" placeholder="total number of orange rows">
+            <br><br>
+          <label for="orangeCases">Cases:</label>
+            <br>
+          <input type="number" id="orangeCases" name="orangeCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="orangeTotalBox"></div>
+        </div>
+        <div class="boltBox">
+          <label class="boltFlavor" for="lemonElation""><strong>Lemon Elation:</strong></label>
+            <br><br>
+          <label for="lemonRows">Rows:</label>
+            <br>
+          <input type="number" id="lemonRows" name="lemonRows" pattern="[0-999999]*" placeholder="total number of lemon rows">
+            <br><br>
+          <label for="lemonCases">Cases:</label>
+            <br>
+          <input type="number" id="lemonCases" name="lemonCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="lemonTotalBox"></div> 
+        </div>
+        <input type="submit" id="submit" value="Submit">
+      </fieldset>    
+  </form>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
