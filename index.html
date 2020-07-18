@@ -18,9 +18,14 @@
 <br>
 
 <div id="container">
+  <!--the entire form below is wrapped in this div-->
+  <!--this form is modeled on the Yerba Mate Co. invoice, and may be proprietary. All rights reserved by The Yerba Mate Co. -->
   <form id="form">
-    <fieldset>
+
+   <!--Bolts-->
+    <fieldset class="boltFieldset">
       <legend>Bolts:</legend>
+      <!--Enlighten Mint-->
         <div class="boltBox">
           <label class="boltFlavor" for="enlightenMint"><strong>Enlighten Mint:</strong></label>
             <br><br>
@@ -34,6 +39,8 @@
             <br><br>
           <div class="total" id="enlightenMintTotalBox"></div>
         </div>
+
+      <!--Revel Berry-->
         <div class="boltBox">
           <label class="boltFlavor" for="revelBerry"><strong>Revel Berry:</strong></label>
             <br><br>
@@ -47,6 +54,8 @@
             <br><br>
           <div class="total" id="revelBerryTotalBox"></div>
         </div>
+
+      <!--Bluephoria-->
         <div class="boltBox">
           <label class="boltFlavor" for="bluephoria"><strong>Bluephoria:</strong></label>
             <br><br>
@@ -60,6 +69,8 @@
             <br><br>
           <div class="total" id="bluephoriaTotalBox"></div>
         </div>
+
+      <!--Orange Exuberance-->
         <div class="boltBox">
           <label class="boltFlavor" for="orangeExuberance"><strong>Orange Exuberance:</strong></label>
             <br><br>
@@ -73,6 +84,8 @@
             <br><br>
           <div class="total" id="orangeTotalBox"></div>
         </div>
+
+      <!--Lemon Elation-->
         <div class="boltBox">
           <label class="boltFlavor" for="lemonElation""><strong>Lemon Elation:</strong></label>
             <br><br>
@@ -86,8 +99,108 @@
             <br><br>
           <div class="total" id="lemonTotalBox"></div> 
         </div>
-        <input type="submit" id="submit" value="Submit">
-      </fieldset>    
+      </fieldset> 
+      <br><br><br>
+      
+    <!--Sparklers-->
+      <fieldset class="sparklerFieldset">
+        <legend>Sparklers:</legend>
+        
+      <!--Classic Gold-->
+        <div class="boltBox">
+          <label class="boltFlavor" for="classicGold"><strong>Classic Gold:</strong></label>
+            <br><br>
+          <label for="classicGoldRows">Rows:</label>
+            <br>
+          <input type="number" id="classicGoldRows" name="classicGoldRows" pattern="[0-999999]*" placeholder="total number of classic gold rows">
+            <br><br>
+          <label for="classicGoldCases">Cases:</label>
+            <br>
+          <input type="number" id="classicGoldCases" name="classicGoldCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="classicGoldTotalBox"></div>
+        </div>
+
+      <!--Cranberry Pomegranate-->
+        <div class="boltBox">
+          <label class="boltFlavor" for="cranberryPomegranate"><strong>Cranberry Pomegranate:</strong></label>
+            <br><br>
+          <label for="cranPomRows">Rows:</label>
+            <br>
+          <input type="number" id="cranPomRows" name="cranPomRows" pattern="[0-999999]*" placeholder="total number of cran pom rows">
+            <br><br>
+          <label for="cranPomCases">Cases:</label>
+            <br>
+          <input type="number" id="cranPomCases" name="cranPomCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="cranPomTotalBox"></div>
+        </div>
+
+      <!--Grapefruit Ginger-->
+        <div class="boltBox">
+          <label class="boltFlavor" for="grapefruitGinger"><strong>Grapefruit Ginger:</strong></label>
+            <br><br>
+          <label for="grapeGinRows">Rows:</label>
+            <br>
+          <input type="number" id="grapeGinRows" name="grapeGinRows" pattern="[0-999999]*" placeholder="total number of grapefruit ginger rows">
+            <br><br>
+          <label for="grapeGinCases">Cases:</label>
+            <br>
+          <input type="number" id="grapeGinCases" name="grapeGinCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="grapeGinTotalBox"></div>
+        </div>
+
+      <!--Lima Limon--> 
+        <div class="boltBox">
+          <label class="boltFlavor" for="limaLimon"><strong>Lima Limon:</strong></label>
+            <br><br>
+          <label for="limaRows">Rows:</label>
+            <br>
+          <input type="number" id="limaRows" name="limaRows" pattern="[0-999999]*" placeholder="total number of lima rows">
+            <br><br>
+          <label for=limaCases">Cases:</label>
+            <br>
+          <input type="number" id="limaCases" name="limaCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="limaTotalBox"></div>
+        </div>
+
+      <!--Blackberry Mint-->
+        <div class="boltBox">
+          <label class="boltFlavor" for="blackberryMint"><strong>Blackberry Mint:</strong></label>
+            <br><br>
+          <label for="bbMintRows">Rows:</label>
+            <br>
+          <input type="number" id="bbMintRows" name="bbMintRows" pattern="[0-999999]*" placeholder="total number of bb mint rows">
+            <br><br>
+          <label for="bbMintCases">Cases:</label>
+            <br>
+          <input type="number" id="bbMintCases" name="bbMintCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+            <br><br>
+          <div class="total" id="bbMintTotalBox"></div> 
+        </div>
+        
+      <!--Ginger Sage-->
+      <div class="boltBox">
+        <label class="boltFlavor" for="gingerSage"><strong>Ginger Sage:</strong></label>
+          <br><br>
+        <label for="gingerSageRows">Rows:</label>
+          <br>
+        <input type="number" id="gingerSageRows" name="gingerSageRows" pattern="[0-999999]*" placeholder="total number of ginger sage rows">
+          <br><br>
+        <label for="gingerSageCases">Cases:</label>
+          <br>
+        <input type="number" id="gingerSageCases" name="gingerSageCases" pattern="[0-999999]*" placeholder="total number of loose cases">
+          <br><br>
+        <div class="total" id="gingerSageTotalBox"></div> 
+      </div>
+      <br>
+        
+      <!--Submit Input-->
+        <input type="submit" id="submit" value="Submit"> 
+      </fieldset>
+
   </form>
 </div>
   <script src="script.js"></script>

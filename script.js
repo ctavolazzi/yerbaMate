@@ -113,7 +113,7 @@ var form=document.getElementById('form');
 
 form.addEventListener('submit', function calcCases(event){
   event.preventDefault();
-  //setting variables
+  //setting bolt variables
   let enlightenMintRows = +document.getElementById('enlightenMintRows').value
   let enlightenMintCases = +document.getElementById('enlightenMintCases').value
   let revelBerryRows = +document.getElementById('revelBerryRows').value
@@ -176,5 +176,81 @@ form.addEventListener('submit', function calcCases(event){
 
   var total = document.getElementById('lemonTotalBox');
   total.innerHTML = "Lemon Total: " + lemonTotal;
+  total.classList.add('newTotal');
+
+  //setting spark variables
+  let classicGoldRows = +document.getElementById('classicGoldRows').value
+  let classicGoldCases = +document.getElementById('classicGoldCases').value
+  let cranPomRows = +document.getElementById('cranPomRows').value
+  let cranPomCases = +document.getElementById('cranPomCases').value
+  let grapeGinRows = +document.getElementById('grapeGinRows').value
+  let grapeGinCases = +document.getElementById('grapeGinCases').value
+  let limaRows = +document.getElementById('limaRows').value
+  let limaCases = +document.getElementById('limaCases').value
+  let bbMintRows = +document.getElementById('bbMintRows').value
+  let bbMintCases = +document.getElementById('bbMintCases').value
+  let gingerSageRows = +document.getElementById('gingerSageRows').value
+  let gingerSageCases = +document.getElementById('gingerSageCases').value
+
+  //MATH////////////
+  //////
+  //////
+  //////
+  let classicGoldRowsMultiplied = classicGoldRows * 26;
+  let classicGoldTotal = classicGoldRowsMultiplied + classicGoldCases;
+  console.log("classicGoldTotal: ")
+  console.log(classicGoldTotal);
+
+  let cranPomRowCasesMultiplied= cranPomRows * 26;
+  let cranPomTotal = cranPomRowCasesMultiplied + cranPomCases;
+  console.log("cranPomTotal: ")
+  console.log(cranPomTotal);
+
+  let grapeGinRowCasesMultiplied= grapeGinRows * 26;
+  let grapeGinTotal = grapeGinRowCasesMultiplied + grapeGinCases;
+  console.log("grapeGinTotal: ")
+  console.log(grapeGinTotal);
+
+
+  let limaRowCasesMultiplied= limaRows * 26;
+  let limaTotal = limaRowCasesMultiplied +limaCases;
+  console.log("limaTotal: ")
+  console.log(limaTotal);
+
+  let bbMintRowCasesMultiplied= bbMintRows * 26;
+  let bbMintTotal = bbMintRowCasesMultiplied + bbMintCases;
+  console.log("bbMintTotal: ")
+  console.log(bbMintTotal);
+
+  let gingerSageRowCasesMultiplied= gingerSageRows * 26;
+  let gingerSageTotal = gingerSageRowCasesMultiplied + gingerSageCases;
+  console.log('gingerSageTotal: ')
+  console.log(gingerSageTotal);
+
+  //write to "total divs"////////
+  //////
+  //////
+  var total = document.getElementById('classicGoldTotalBox');
+  total.innerHTML = "Classic Gold Total: " + classicGoldTotal;
+  total.classList.add('newTotal');
+
+  var total = document.getElementById('cranPomTotalBox');
+  total.innerHTML = "Cran Pom Total: " + cranPomTotal;
+  total.classList.add('newTotal');
+
+  var total = document.getElementById('grapeGinTotalBox');
+  total.innerHTML = "Grapefruit Ginger Total: " + grapeGinTotal;
+  total.classList.add('newTotal');
+
+  var total = document.getElementById('limaTotalBox');
+  total.innerHTML = "Lima Limon Total: " + limaTotal;
+  total.classList.add('newTotal');
+
+  var total = document.getElementById('bbMintTotalBox');
+  total.innerHTML = "Blackberry Mint Total: " + bbMintTotal;
+  total.classList.add('newTotal');
+
+  var total = document.getElementById('gingerSageTotalBox');
+  total.innerHTML = "Ginger Sage Total: " + gingerSageTotal;
   total.classList.add('newTotal');
 })
